@@ -27,7 +27,7 @@ client.on('messageCreate', message => {
             client.interval = setInterval(() => {
                 if (i < ayat.length) {
                     const element = ayat[i];
-                    const customMessage = `Ayah ${i + 1}\n***${element.text_indopak}***\n\n*[Made by Abouzaid]*`;
+                    const customMessage = `Ayah ${i + 1}\n***\u202E${element.text_indopak}\u202C***\n\n*[Made by Abouzaid]*`;
                     message.channel.send(customMessage);
                     i++;
                 } else {
